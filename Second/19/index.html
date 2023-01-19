@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<HTML>
+
+<head>
+    <meta charset="utf-8">
+    <style type="text/css">
+        body {
+            counter-reset: number 0;
+            font-size: 24px;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            overflow: auto;
+            height: 1000px;
+        }
+
+        body div {
+            margin-left:25px;
+        }
+        body div:after {
+            counter-increment: number 1;
+            content: counter(number) ":  content";
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>Tag </div>
+    <div>Tag </div>
+    <div>Tag </div>
+    <div>Tag </div>
+    <div>Tag </div>
+</body>
+
+</HTML>
