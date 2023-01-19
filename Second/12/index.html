@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<title>Document</title>
+</head>
+<body>
+<div class="cont">
+<img src="https://i.imgur.com/AUNPUwj.png" >
+<canvas>
+</canvas>
+</div>
+<script>
+    const a = document.querySelector('canvas'),
+        b = a.getContext('2d')
+
+    let c = 'a' /*a-z*/, d = ''
+    for (let i = 0; i < 25; i++)
+        c += String.fromCharCode(c.charCodeAt(0) + i)
+
+    for (let i = 0; i < 6; i++)
+        d += c[Math.floor(Math.random() * 25)]
+
+    b.font = "50px Arial"
+    b.fillText(d, 75, 75);
+</script>
+
+</body>
+</html>
