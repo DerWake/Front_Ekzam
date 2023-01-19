@@ -1,0 +1,12 @@
+body {
+    overflow: hidden;
+}
+
+div {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    width: 100px;
+    border-radius: 90%;
+    border: 2px solid green;
+ }
