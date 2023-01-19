@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<title>No title</title>
+</head>
+<body>
+<div class="cont">
+<input class="number" type="number">
+<input class="number" type="number">
+<input type="checkbox">
+<input type="submit">
+
+<script>
+    const a = document.querySelectorAll('input'),
+        b = a[0], c = a[1], e = a[2], f = a[3]
+    f.onclick = function() {
+    if(b.value != "" && c.value != ""){
+    	alert(parseFloat(b.value) + parseFloat(c.value));
+    };
+  };
+</script>
+</div>
+
+</body>
+
+</html>
