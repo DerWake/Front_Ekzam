@@ -1,0 +1,23 @@
+p,
+label {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input {
+    margin: 0.4rem;
+}
+
+button {
+    margin-left: 10px;
+}
+
+.cont {
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow: auto;
+    height: 1000px;
+}
