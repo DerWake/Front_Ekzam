@@ -1,0 +1,32 @@
+body {
+    margin: 100px;
+}
+
+div {
+    border: 5px solid green;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    width: 100px;
+    border-radius: 90%;
+    margin: 5px;
+}
+
+div:first-child {
+    border: 5px dashed red;
+}
+
+div:nth-child(2) {
+    border: 5px solid yellow;
+}
+
+div:nth-child(3) {
+    border: 5px dashed blue;
+}
+
+div:nth-child(4) {
+    border: 5px solid aqua;
+}
+
+div:last-child {
+    border: 5px dashed black;
+}
