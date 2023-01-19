@@ -1,0 +1,60 @@
+* {
+  font-size: 36px;
+  font-family: Arial;
+  font-weight: bold;
+ }
+
+.div {
+  position: relative;
+}
+
+.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: deeppink;
+  animation: loading 2s ease-in-out;
+  overflow: hidden;
+  z-index: 1;
+ }
+
+ .top::after {
+  position: absolute;
+  content: '';
+  right: 0;
+  top: 0;
+  width: 2px;
+  height: 40px;
+  background-color: deeppink;
+  animation: slash 2s ease-in-out;
+  z-index: 2;
+ }
+
+ .bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  -webkit-text-stroke: 1.5px black;
+  z-index: 0;
+ }
+
+ @keyframes loading {
+  0% {
+   width: 2px;
+  }
+
+  100% {
+   width: 170px;
+  }
+ }
+
+ @keyframes slash {
+  0% {
+   left: 0;
+  }
+
+  100% {
+   left: 168px;
+  }
+ }
