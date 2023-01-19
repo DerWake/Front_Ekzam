@@ -1,0 +1,45 @@
+:root {
+--second: 1s;
+}
+
+@keyframes rotate {
+    from {
+    transform: rotate(0);
+    }
+
+    to {
+    transform: rotate(1turn);
+    }
+}
+
+.clock {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: white;
+    border: solid 4px;
+    margin: 0 auto;
+    position: relative;
+    transform: rotate(180deg);
+}
+
+.hand {
+    position: absolute;
+    top: 50%;
+    left: calc(50% - var(--width) / 2);
+    width: var(--width);
+    height: var(--height);
+    background-color: var(--color);
+    border-radius: calc(var(--width) / 2);
+    transform-origin: center 0;
+}
+
+.second {
+    --width: 5px;
+    --height: 140px;
+    --color: black;
+}
+
+.second.hand {
+    animation: rotate steps(60) calc(var(--second) * 60) infinite;
+}
