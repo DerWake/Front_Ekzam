@@ -1,0 +1,61 @@
+body {
+  position: relative;
+  height: 1000px;
+}
+
+
+@-webkit-keyframes item {
+  0% { font-size: 12px;color: green; }
+  
+  50% { font-size: 30px; color:darkred; }
+  
+  100% {font-size: 50px;color: #999; }
+  
+}
+
+.ball {
+  position: absolute;
+  background: red;
+  top: 60px;
+  right: 0%;
+  width: 40px;
+  height: 40px;
+  border-radius: 80px;
+  -webkit-animation: flying-ball 10s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-iteration-count: 5;
+  -webkit-animation-timing-function: ease;
+}
+.ball-2 {
+  position: absolute;
+  background: yellow;
+  top: 60px;
+  right: 30%;
+  width: 40px;
+  height: 40px;
+  border-radius: 80px;
+  -webkit-animation: flying-2 15s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-iteration-count: 5;
+  -webkit-animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes flying-ball {
+  0% { top: 10px; right: 0%; }
+  20% { top: 80px; right: 20%; }
+  40% { top:200px; right: 40%; }
+  60% {  top: 120px; right: 60%; }
+  80% { top: 500px; right: 80%; }
+  100% { top: 250px; right: 100%; }
+}
+
+@-webkit-keyframes flying-2 {
+  0% { top: 10px; right: 10%; }
+  20% { top: 80px; right: 25%; }
+  40% { top:40px; right: 35%; }
+  60% {  top: 100px; right: 48%; }
+  80% { top: 50px; right: 75%; }
+  100% { top: 140px; right: 90%; }
+}
